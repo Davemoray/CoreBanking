@@ -4,7 +4,9 @@
 @{ViewData["Title"] = "Login";}
 
 
-<h1>User LogIn</h1>
+@{
+    Layout = "~/Areas/Identity/Pages/_AuthLayout.cshtml";
+}
 <div class="col-md-10 offset-1">
     <div class="login-form-icon">
         <i class="bi bi-person-circle bi-9x text-secondary" width="30px" height="30px"></i>

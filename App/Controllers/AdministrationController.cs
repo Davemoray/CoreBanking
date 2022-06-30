@@ -34,7 +34,6 @@ namespace App.Controllers
             return View();
         }
 
-        //[Authorize (Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> RegisterUser(RegisterViewModel model)
         {
@@ -55,7 +54,7 @@ namespace App.Controllers
                 if(result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToPage("ListUsers", "Administration");
+                    return RedirectToAction("index", "home");
                 }
 
                 //If user is successfully created, signin the user using
@@ -146,7 +145,7 @@ namespace App.Controllers
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("ListRoles", "Administration");
+                    return RedirectToAction("index", "home");
                 }
 
                 foreach (IdentityError error in result.Errors)
@@ -569,7 +568,7 @@ namespace App.Controllers
                     return View(model);
                 }
             }
-            //Adding all the selected claims to the role
+            //Adding all the selected claims ro the role
             var data_ = model.Claims.Where(c => c.IsSelected).Select(c => new Claim(c.ClaimType, c.ClaimType));
 
             foreach(var data in data_)

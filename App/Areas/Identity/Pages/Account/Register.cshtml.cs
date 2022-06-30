@@ -89,10 +89,10 @@ namespace App.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
-            //if (User.Identity.IsAuthenticated)
-            //{
-            //    Response.Redirect("/");
-            //}
+            if (User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("/");
+            }
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
