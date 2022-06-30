@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "x4EMx3wGFCFoCHxkPE/S52CQW1Z0sQloukxM4MnUbbs=",
+  "Hash": "DM77H+IvrUqwGpFVRqJoY7l3wD4ucJhNm8ZL1xSVhg4=",
   "Source": "App",
   "BasePath": "_content/App",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\'Pelumi Morakinyo\\source\\repos\\App\\App\\wwwroot\\css\\Theme.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\'Pelumi Morakinyo\\source\\repos\\App\\App\\wwwroot\\",
+      "BasePath": "_content/App",
+      "RelativePath": "css/Theme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Theme.css"
     },
     {
       "Identity": "C:\\Users\\'Pelumi Morakinyo\\source\\repos\\App\\App\\wwwroot\\favicon.ico",
