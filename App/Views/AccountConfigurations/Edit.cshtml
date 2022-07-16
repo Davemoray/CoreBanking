@@ -1,0 +1,64 @@
+﻿@model App.Models.AccountConfiguration
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>AccountConfiguration</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="SavingsInterestRate" class="control-label"></label>
+                <input asp-for="SavingsInterestRate" class="form-control" />
+                <span asp-validation-for="SavingsInterestRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoanInterestRate" class="control-label"></label>
+                <input asp-for="LoanInterestRate" class="form-control" />
+                <span asp-validation-for="LoanInterestRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SavingsMinBalance" class="control-label"></label>
+                <input asp-for="SavingsMinBalance" class="form-control" />
+                <span asp-validation-for="SavingsMinBalance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrentMinBalance" class="control-label"></label>
+                <input asp-for="CurrentMinBalance" class="form-control" />
+                <span asp-validation-for="CurrentMinBalance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SavingsMaxDailyWithdrawal" class="control-label"></label>
+                <input asp-for="SavingsMaxDailyWithdrawal" class="form-control" />
+                <span asp-validation-for="SavingsMaxDailyWithdrawal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrentMaxDailyWithdrawal" class="control-label"></label>
+                <input asp-for="CurrentMaxDailyWithdrawal" class="form-control" />
+                <span asp-validation-for="CurrentMaxDailyWithdrawal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinancialDate" class="control-label"></label>
+                <input asp-for="FinancialDate" class="form-control" />
+                <span asp-validation-for="FinancialDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

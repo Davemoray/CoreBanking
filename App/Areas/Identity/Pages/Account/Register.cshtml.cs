@@ -82,6 +82,7 @@ namespace App.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+            
 
 
         }
@@ -96,6 +97,18 @@ namespace App.Areas.Identity.Pages.Account
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
+        
+        public static string CreateRandomPassword()
+        {
+            string allowedChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+?";
+            Random random = new Random();
+            char[] chars = new char[15];
+            for (int i = 0; i<15; i++)
+            {
+                chars[i] = allowedChars[random.Next(0, allowedChars.Length)];
+            }
+            return new string(chars);
+        }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
@@ -107,7 +120,7 @@ namespace App.Areas.Identity.Pages.Account
             {
                 MailAddress address = new MailAddress(Input.Email);
                 string userName = address.User;
-                var user = new ApplicationUser { UserName = userName, Email = Input.Email, FirstName = Input.FirstName, LastName = Input.LastName };
+                var user = new ApplicationUser { UserName = userName, Email = Input.Email, FirstName = Input.FirstName, LastName = Input.LastName, IsEnabled=true};
 
 
                 //var user = CreateUser();
@@ -118,6 +131,17 @@ namespace App.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
+                    //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+                    //var confirmationLink = Url.Action("ConfirmEmail", "Account", new { token = code ,userId = user.Id},Request.Scheme);    
+
+                    //if (_signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                    //{
+                    //    return RedirectToAction("ListUsers", "User");
+                    //}
+
+
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var userId = await _userManager.GetUserIdAsync(user);

@@ -1,0 +1,72 @@
+﻿@model App.Models.GLAccount
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>GLAccount</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AccountID" />
+           
+            <div class="form-group">
+                <label asp-for="AccountName" class="control-label"></label>
+                <input asp-for="AccountName" class="form-control" />
+                <span asp-validation-for="AccountName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="GLAccountCode" class="control-label"></label>
+                <input asp-for="GLAccountCode" class="form-control" />
+                <span asp-validation-for="GLAccountCode" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AccountBalance" class="control-label"></label>
+                <input asp-for="AccountBalance" class="form-control" />
+                <span asp-validation-for="AccountBalance" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="GlCategoryID" class="control-label"></label>
+                <select asp-for="GlCategoryID" class="form-control" asp-items="ViewBag.GlCategoryID"></select>
+                <span asp-validation-for="GlCategoryID" class="text-danger"></span>
+            </div>
+
+           @* <div class="form-group">
+                <label asp-for="MainCategory" class="control-label"></label>
+                <input asp-for="MainCategory" class="form-control" />
+                <span asp-validation-for="MainCategory" class="text-danger"></span>
+            </div>*@
+
+             <div class="form-group">
+                <label asp-for="@Model.MainCategory" class="control-label"></label>
+              @* <select asp-for="MainCategory" class="form-control" asp-items="ViewBag.MainCategory"></select> *@
+                @Html.DropDownList("MainCategory", Html.GetEnumSelectList<MainGLCategory>(),"Select", new { @class="form-control" })
+                <span asp-validation-for="@Model.MainCategory" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BranchID" class="control-label"></label>
+                <select asp-for="BranchID" class="form-control" asp-items="ViewBag.BranchID"></select>
+                <span asp-validation-for="BranchID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

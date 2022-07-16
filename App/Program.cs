@@ -2,22 +2,31 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using App.Data;
 using App.Models;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using App.Properties.Services;
+using App.Logic;
+
 
 var builder = WebApplication.CreateBuilder(args);
-
-
-var connectionString = builder.Configuration.GetConnectionString("AppDbContextConnection") ?? throw new InvalidOperationException("Connection string 'RoleDbContextConnection' not found.");
+var connectionString = builder.Configuration.GetConnectionString("AppDbContextConnection") ?? throw new InvalidOperationException("Connection string 'AppDbContextConnection' not found.");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString)); ;
+    options.UseSqlServer(connectionString));;
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<AppDbContext>(); ;
+    .AddRoles<ApplicationRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders(); ;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+//builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.AddTransient<AccountConfigurationLogic, AccountConfigurationLogic>();
+builder.Services.AddTransient<CustomerLogic, CustomerLogic>();
+//builder.Services.AddTransient<CustomerAccountLogic, CustomerAccountLogic>();
+builder.Services.AddHttpContextAccessor();
+
 
 var app = builder.Build();
 

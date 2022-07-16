@@ -43,7 +43,7 @@ namespace App.Areas.Identity.Pages.Account
         {
 
             [Required]
-            [Display(Name = "EmailAddress/Username")]
+            [Display(Name = "Username")]
             public string Email { get; set; }
 
             /// <summary>
@@ -119,5 +119,7 @@ namespace App.Areas.Identity.Pages.Account
             // If we got this far, something failed, redisplay form
             return Page();
         }
+
+
     }
 }

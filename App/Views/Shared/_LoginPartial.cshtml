@@ -17,12 +17,71 @@
     </li>
 
      <li class="nav-item">
-           <a class="nav-link text-white" asp-area="" asp-controller="Administration" asp-action="ListRoles">Roles</a>
+           <a class="nav-link text-white" asp-area="" asp-controller="Role" asp-action="ListRoles">Roles</a>
         </li>
 
              <li class="nav-item">
-           <a class="nav-link text-white" asp-area="" asp-controller="Administration" asp-action="ListUsers">UserRoleList</a>
+           <a class="nav-link text-white" asp-area="" asp-controller="User" asp-action="ListUsers">Users</a>
         </li>
+
+
+        <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Account Management<i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a asp-area="" asp-action="Index" asp-controller="GLCategories" title="GL Category Management">GL Category Management</a>
+                                </li>
+                                <li>
+                                    <a asp-area="" asp-action="Index" asp-controller="GLAccounts" title="GLAccount Management"> GLAccounts</a>
+                                </li>
+                                <li>
+                                    <a asp-area="" asp-action="Index" asp-controller="CustomerAccounts" title="Customer Account Management">Customer Accounts</a>
+                                </li>
+
+                                 <li>
+                                    <a asp-area="" asp-action="Index" asp-controller="Customers" title="Customer Management">Customers</a>
+                                </li>
+                                
+                                <li>
+                                    <a asp-area="" asp-action="Index" asp-controller="TillUser" title="TellerManagement">Tellers</a>
+                                </li>
+                                <li>
+                                    <a asp-area="" asp-action="Index" asp-controller="AccountConfigurations" title="Savings, Current, and Loan Account Configurations">Configurations</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+
+
+@*
+        <li class="nav-item">
+           <a class="nav-link text-white" asp-area="" asp-controller="GLCategories" asp-action="Index">GLCategories</a>
+        </li>
+
+        <li class="nav-item">
+           <a class="nav-link text-white" asp-area="" asp-controller="GLAccounts" asp-action="Index">GLAccounts</a>
+        </li>
+
+         <li class="nav-item">
+           <a class="nav-link text-white" asp-area="" asp-controller="TillUser" asp-action="Index">Tellers</a>
+        </li>
+
+        <li class="nav-item">
+           <a class="nav-link text-white" asp-area="" asp-controller="Customers" asp-action="Index">Customers</a>
+        </li>
+
+        <li class="nav-item">
+           <a class="nav-link text-white" asp-area="" asp-controller="CustomerAccounts" asp-action="Index">CustomerAccounts</a>
+        </li>*@
 }
 else
 {

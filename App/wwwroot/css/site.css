@@ -45,3 +45,50 @@ div.card-content {
 div.login-form-icon {
     text-align: center;
 }
+
+
+.Switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+
+.Switch__Input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.Slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    background-color: lightgray;
+    /* New property */
+    transition: .3s;
+}
+
+    /* New selector for the circle pseudo-element */
+    .Slider::before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        border-radius: 50%;
+        background-color: white;
+        transition: .3s;
+    }
+
+.Switch__Input:checked + .Slider::before {
+    /* Move the circle pseudo-element from left to right and right to left when the input is checked */
+    transform: translateX(26px);
+}
+
+.Switch__Input:checked + .Slider {
+    background-color: cornflowerblue;

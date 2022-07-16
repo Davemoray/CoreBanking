@@ -19,6 +19,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/'Pelumi Morakinyo/source/repos/App/App/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -59,6 +67,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/'Pelumi Morakinyo/source/repos/App/App/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -75,64 +87,156 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/CreateRole.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ3JlYXRlUm9sZS5jc2h0bWw=
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/AccountConfigurations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudENvbmZpZ3VyYXRpb25zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/EditRole.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFJvbGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/EditUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFVzZXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/EditUsersInRole.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFVzZXJzSW5Sb2xlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/ListRoles.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFJvbGVzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/ListUsers.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFVzZXJzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/ManageClaimsInRole.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTWFuYWdlQ2xhaW1zSW5Sb2xlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/ManageUserClaims.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTWFuYWdlVXNlckNsYWltcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/ManageUserRoles.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTWFuYWdlVXNlclJvbGVzLmNzaHRtbA==
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/AccountConfigurations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudENvbmZpZ3VyYXRpb25zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Administration/RegisterUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cUmVnaXN0ZXJVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GlCategory/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2xDYXRlZ29yeVxDcmVhdGUuY3NodG1s
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/ApplicationRoles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25Sb2xlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GlCategory/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2xDYXRlZ29yeVxEZWxldGUuY3NodG1s
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/ApplicationRoles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25Sb2xlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GlCategory/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2xDYXRlZ29yeVxEZXRhaWxzLmNzaHRtbA==
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/ApplicationRoles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25Sb2xlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GlCategory/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2xDYXRlZ29yeVxFZGl0LmNzaHRtbA==
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/ApplicationRoles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25Sb2xlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GlCategory/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2xDYXRlZ29yeVxJbmRleC5jc2h0bWw=
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/ApplicationRoles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25Sb2xlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Branches/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Branches/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Branches/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Branches/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Branches/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Claims/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Claims/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Claims/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Claims/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Claims/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhaW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/CustomerAccounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJBY2NvdW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/CustomerAccounts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJBY2NvdW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/CustomerAccounts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJBY2NvdW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/CustomerAccounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJBY2NvdW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/CustomerAccounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJBY2NvdW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Customers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Customers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLAccounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xBY2NvdW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLAccounts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xBY2NvdW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLAccounts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xBY2NvdW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLAccounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xBY2NvdW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLAccounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xBY2NvdW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLCategories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xDYXRlZ29yaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLCategories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xDYXRlZ29yaWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLCategories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xDYXRlZ29yaWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLCategories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xDYXRlZ29yaWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/GLCategories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR0xDYXRlZ29yaWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Home/Index.cshtml]
@@ -143,8 +247,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Role/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGVSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Role/EditRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0Um9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Role/ListRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxMaXN0Um9sZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Role/ManageClaimsInRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxNYW5hZ2VDbGFpbXNJblJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Role/ManageUsersInRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxNYW5hZ2VVc2Vyc0luUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Shared/_LoginPartial.cshtml]
@@ -153,6 +281,42 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/TillUser/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlsbFVzZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/TillUser/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlsbFVzZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/TillUser/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlsbFVzZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/TillUser/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlsbFVzZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/TillUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlsbFVzZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/User/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/User/ListUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMaXN0VXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/User/ManageUserClaims.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNYW5hZ2VVc2VyQ2xhaW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/User/ManageUserRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNYW5hZ2VVc2VyUm9sZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/'Pelumi Morakinyo/source/repos/App/App/Views/_ViewImports.cshtml]

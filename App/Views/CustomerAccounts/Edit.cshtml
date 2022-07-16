@@ -1,0 +1,65 @@
+﻿@model App.Models.CustomerAccount
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>CustomerAccount</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="CustomerId" class="control-label"></label>
+                <select asp-for="CustomerId" class="form-control" asp-items="ViewBag.CustomerId"></select>
+                <span asp-validation-for="CustomerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccountNumber" class="control-label"></label>
+                <input asp-for="AccountNumber" class="form-control" />
+                <span asp-validation-for="AccountNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccountName" class="control-label"></label>
+                <input asp-for="AccountName" class="form-control" />
+                <span asp-validation-for="AccountName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccountBalance" class="control-label"></label>
+                <input asp-for="AccountBalance" class="form-control" />
+                <span asp-validation-for="AccountBalance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccountType" class="control-label"></label>
+               @* <select asp-for="AccountType" class="form-control"></select>*@
+                @Html.DropDownList("AccountType", Html.GetEnumSelectList<AccountTypes>(),"Select", new { @class="form-control" })
+                <span asp-validation-for="AccountType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOpened" class="control-label"></label>
+                <input asp-for="DateOpened" class="form-control" />
+                <span asp-validation-for="DateOpened" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsActivated" /> @Html.DisplayNameFor(model => model.IsActivated)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

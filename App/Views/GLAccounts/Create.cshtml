@@ -1,0 +1,160 @@
+﻿@*@using App.Models;
+@model GLAccount;
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>General Ledger Account Create</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="@Model.AccountName" class="control-label"></label>
+                <input asp-for="@Model.AccountName" class="form-control" />
+                <span asp-validation-for="@Model.AccountName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.GLAccountCode" class="control-label"></label>
+                <input asp-for="@Model.GLAccountCode" class="form-control" />
+                <span asp-validation-for="@Model.GLAccountCode" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.AccountBalance" class="control-label"></label>
+                <input asp-for="@Model.AccountBalance" class="form-control" />
+                <span asp-validation-for="@Model.AccountBalance" class="text-danger"></span>
+            </div>
+
+           <div class="form-group">
+                <label asp-for="@Model.GlCategoryID" class="control-label"></label>
+               @ <select asp-for="@Model.GlCategoryID" class ="form-control" asp-items="ViewBag.GlCategoryID"></select>
+                 @Html.DropDownList("GlCategoryID", null,htmlAttributes: new { @class="form-control" })
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.MainCategory" class="control-label"></label>
+              @ <select asp-for="MainCategory" class="form-control" asp-items="ViewBag.MainCategory"></select>
+                @Html.DropDownList("MainCategory", Html.GetEnumSelectList<MainGLCategory>(),"Select", new { @class="form-control" })
+                <span asp-validation-for="@Model.MainCategory" class="text-danger"></span>
+            </div>
+
+             <div class="form-group">
+                <label asp-for="@Model.BranchID" class="control-label"></label>
+                <select asp-for="@Model.BranchID" class ="form-control" asp-items="ViewBag.BranchID"></select>
+                 @Html.DropDownList("BranchID", null,htmlAttributes: new { @class="form-control" })
+            </div>
+
+            <div class="form-group">
+           
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+*@
+
+
+@using App.Models;
+@model GLAccount;
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>General Ledger Account</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AccountName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccountName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccountName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+       @* <div class="form-group">
+            @Html.LabelFor(model => model.GLAccountCode, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GLAccountCode, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GLAccountCode, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+@*
+          <div class="form-group">
+            @Html.LabelFor(model => model.AccountBalance, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AccountBalance, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AccountBalance, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+      
+       <div class="form-group">
+            @Html.LabelFor(model => model.GlCategoryID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+
+                <select asp-for="@Model.GlCategoryID" class ="form-control" asp-items="ViewBag.GlCategoryID"></select>
+
+                @Html.ValidationMessageFor(model => model.GlCategoryID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.MainCategory, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MainCategory", Html.GetEnumSelectList<MainGLCategory>(),"Select", new { @class="form-control" })
+                @Html.ValidationMessageFor(model => model.MainCategory, "", new { @class = "text-danger" })
+            </div>
+            </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BranchID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("BranchID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.BranchID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-primary" >Create</button>
+                
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    <button type="submit" class="btn btn-default">@Html.ActionLink("<<Back to List", "Index")</button>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

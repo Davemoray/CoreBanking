@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using App.Models;
+using App.Models.ViewModels;
+using System.ComponentModel.DataAnnotations;
 
 namespace App.ViewModels
 {
@@ -8,13 +10,16 @@ namespace App.ViewModels
         {
             Claims = new List<string>();
             Roles = new List<string>();
-            Users = new List<string>();
+            Users = new List<ApplicationUser>();
+           
         }
 
         public string Id { get; set; }
 
         [Required]
         public string UserName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
         [Required]
         [EmailAddress]
@@ -23,6 +28,8 @@ namespace App.ViewModels
         public List<string> Claims { get; set; }
 
         public IList<string> Roles { get; set; }
-        public List<string> Users { get; set; }
+        public List<ApplicationUser> Users { get; set; }
+
+        public bool Status { get; set; }
     }
 }
